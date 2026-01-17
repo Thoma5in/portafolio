@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Currículums disponibles para previsualizar y descargar." />
+	<title>CVs | Samuel Ospina Velásquez</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+	<header class="site-header" id="top">
+		<div class="container header-inner">
+			<a class="brand" href="index.html" aria-label="Volver al inicio">
+				<span class="brand-mark">◆</span>
+				<span class="brand-text">Samuel Ospina Velásquez</span>
+			</a>
+
+			<button class="icon-btn nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+				<span class="hamburger" aria-hidden="true"></span>
+			</button>
+
+			<nav class="site-nav" id="site-nav" aria-label="Navegación">
+				<a href="index.html">Inicio</a>
+				<a href="#cvs">CVs</a>
+				<a href="index.html#contacto" class="btn btn-small">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="contenido">
+		<section class="section" id="cvs">
+			<div class="container">
+				<div class="section-head">
+					<h2>Currículums</h2>
+					<p class="muted">
+						Previsualiza o descarga el CV que necesites.
+					</p>
+				</div>
+
+				<div class="toolbar" aria-label="Filtros de CVs">
+					<input class="input" id="cvSearch" type="search" placeholder="Buscar por nombre/tags…" autocomplete="off" />
+					<div class="toolbar-right">
+						<span class="muted" id="cvCount" aria-live="polite"></span>
+					</div>
+				</div>
+
+				<div class="cards-3" id="cvGrid" aria-label="Listado de CVs"></div>
+			</div>
+		</section>
+	</main>
+
+	<div class="modal" id="cvModal" aria-hidden="true" role="dialog" aria-label="Previsualización de CV">
+		<div class="modal-backdrop" data-close="true"></div>
+		<div class="modal-panel" role="document">
+			<div class="modal-head">
+				<div class="modal-title" id="cvModalTitle">Previsualización</div>
+				<button class="icon-btn" type="button" id="cvModalClose" aria-label="Cerrar">✕</button>
+			</div>
+			<div class="modal-body">
+				<iframe id="cvModalFrame" title="CV" loading="lazy"></iframe>
+			</div>
+			<div class="modal-foot">
+				<a class="btn btn-small" id="cvModalDownload" href="#" download>Descargar</a>
+				<a class="btn btn-small btn-ghost" id="cvModalOpen" href="#" target="_blank" rel="noreferrer">Abrir en pestaña</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p class="muted">© <span id="year"></span> Samuel Ospina Velásquez</p>
+			<a class="muted" href="#top">Volver arriba</a>
+		</div>
+	</footer>
+
+	<script src="js/cv.js" defer></script>
+</body>
+</html>
