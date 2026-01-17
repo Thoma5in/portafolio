@@ -16,11 +16,17 @@
 	--radius-sm: 12px;
 	--container: 1120px;
 	--gap: 18px;
+	--scroll-offset: 92px;
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-offset);
+}
+
+[id] { scroll-margin-top: var(--scroll-offset); }
 
 body {
 	margin: 0;
