@@ -14,7 +14,7 @@ const projects = [
 			"JavaScript",
 			"3D Web",
 		],
-		github: "https://github.com/Thoma5in",
+		
 		demo: "",
 	},
 	{
@@ -29,7 +29,7 @@ const projects = [
 			"Backend",
 			"Modelado de Base de Datos",
 		],
-		github: "https://github.com/Thoma5in",
+		github: "https://github.com/luiseurban/Transmedina_Project",
 		demo: "",
 	},
 	{
@@ -45,7 +45,7 @@ const projects = [
 			"Scrum",
 			"Trabajo en Equipo",
 		],
-		github: "https://github.com/Thoma5in",
+		github: "https://github.com/Thoma5in/MaxWare",
 		demo: "",
 	},
     {
@@ -63,7 +63,7 @@ const projects = [
 			"SQL",
 			"Git",
 		],
-		github: "https://github.com/Thoma5in",
+		github: "https://github.com/Thoma5in/frontend-repository",
 		demo: "",
 	},
 ];
